@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  background-color:rgb(188, 213, 235);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing:1px;
+}
+/* style for links*/
+
+:link {
+  color: rgb(234, 122, 140);
+}
+a:hover {
+  color: blue;
+}
+a:visited {
+  color: gray;
+}
+:active {
+    color:red
+}
+
+/* style for content*/
+h1{
+    text-align:center;
+    color: aliceblue;
+    text-transform:uppercase;
+    margin-top:100px;
+    font-size:3em;
+    letter-spacing:5px;
+}
+
+.guide a{
+background-color:rgb(236, 240, 245);
+padding:10px 20px;
+border-radius:5px;
+margin:30px 10px;
+display: inline-block;
+}
+
+.guide {
+    text-align: center;
+}
+
+
+.footerul {
+  display: inline;
+}
+/* create a decorator element with a ::before selector
+style the :link, :visited, :active, :hover state of your links
+use combinators instead of classes if possible: footer ul > li instead of .footer-list-item */
