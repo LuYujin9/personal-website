@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
-  background-color:rgb(188, 213, 235);
+  background-color: rgb(188, 213, 235);
   font-family: Arial, Helvetica, sans-serif;
-  letter-spacing:1px;
+  letter-spacing: 1px;
 }
 /* style for links*/
 
@@ -16,31 +16,70 @@ a:visited {
   color: gray;
 }
 :active {
-    color:red
+  color: red;
 }
 
 /* style for content*/
-h1{
-    text-align:center;
-    color: aliceblue;
-    text-transform:uppercase;
-    margin-top:100px;
-    font-size:3em;
-    letter-spacing:5px;
+h1 {
+  text-align: links;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin-left: 50px;
+  z-index: 10;
 }
 
-.guide a{
-background-color:rgb(236, 240, 245);
-padding:10px 20px;
-border-radius:5px;
-margin:30px 10px;
-display: inline-block;
+#h1-1 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+#h1-2 {
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  font-size: 1em;
+  width: 700px;
+  margin: 20px auto;
+}
+
+#h1-3 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  width: 1000px;
+  margin: 20px auto;
 }
 
 .guide {
-    text-align: center;
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 9;
+}
+.guide a {
+  color: white;
+  flex-wrap: row nowrap;
+  justify-content: flex-end;
+  align-content: center;
+  margin: 15px 20px;
+  display: inline-block;
 }
 
+.guide {
+  text-align: center;
+}
 
 .footerul {
   display: inline;
