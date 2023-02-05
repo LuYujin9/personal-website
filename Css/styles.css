@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  background-color: rgb(188, 213, 235);
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
 }
@@ -15,30 +14,41 @@ a:hover {
 a:visited {
   color: gray;
 }
-:active {
-  color: red;
-}
 
 /* style for content*/
+
+body {
+  background-color: rgb(204, 204, 228);
+}
+
+header {
+  background-image: url("/images/hintergrund.jpeg");
+  background-size: cover;
+  margin: 0px;
+  border: 1px solid black; /* see the border*/
+  height: 500px;
+}
+
 h1 {
   text-align: links;
   color: aliceblue;
   text-transform: uppercase;
   font-size: 2em;
   letter-spacing: 2px;
-  margin-left: 50px;
+  margin-left: 100px;
+
+  top: 0px;
   z-index: 10;
 }
 
 #h1-1 {
-  text-align: center;
   color: white;
   text-transform: uppercase;
   font-size: 3em;
   font-weight: bold;
-  justify-content: center;
   margin-top: 100px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #h1-2 {
@@ -46,7 +56,6 @@ h1 {
   color: white;
   line-height: 30px;
   font-size: 1em;
-  width: 700px;
   margin: 20px auto;
 }
 
@@ -55,34 +64,80 @@ h1 {
   color: white;
   text-transform: uppercase;
   font-size: 1em;
-  width: 1000px;
   margin: 20px auto;
 }
 
-.guide {
+#container {
   width: 100%;
   height: 50px;
-  border: 1px solid black;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  z-index: 9;
-}
-.guide a {
-  color: white;
-  flex-wrap: row nowrap;
+  display: flex;
   justify-content: flex-end;
   align-content: center;
-  margin: 15px 20px;
-  display: inline-block;
+  position: fixed;
+  top: 10px;
+  margin: 0px;
 }
 
-.guide {
+#container > a {
+  padding: 10px 30px;
+  color: rgb(118, 96, 96);
+  font-weight: bold;
+}
+
+#aboutme {
+  margin: 50px;
+  display: flex;
+}
+
+.sections {
+  position: relative;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin-left: 100px;
+  margin: 50px 50px;
+}
+
+.button_link {
+  width: 150px;
+  padding: 8px;
+  border: solid 2px black;
   text-align: center;
+  font-size: 15px;
+  background-color: rgb(204, 204, 228);
+}
+
+.pictures {
+  width: 350px;
+  height: 300px;
+  margin: 50px 50px;
+  box-shadow: 20px 20px;
+}
+
+#skills {
+  margin: 50px;
+}
+.each_skill {
+  width: 100%;
+  height: auto;
+  border: 1px solid black; /* see the border*/
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  top: 10px;
+  margin: 0px;
+}
+
+.each_skill > p {
+  padding: 30px 30px;
+  color: rgb(118, 96, 96);
+  font-weight: bold;
+  border: 1px solid black;
 }
 
 .footerul {
   display: inline;
+  border: 1px solid black; /* see the border*/
 }
 /* create a decorator element with a ::before selector
 style the :link, :visited, :active, :hover state of your links
