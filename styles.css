@@ -1,3 +1,6 @@
+@import "/global.css";
+
+
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -6,7 +9,7 @@
 /* style for links*/
 
 :link {
-  color: rgb(234, 122, 140);
+  color: white;
 }
 a:hover {
   color: blue;
@@ -18,30 +21,23 @@ a:visited {
 /* style for content*/
 
 body {
-  background-color: rgba(206, 217, 236, 0.724);
+  margin:0px;
+  background-color:var(--color-0);
+  border: 1px solid black; /* see the border*/
 }
 
 header {
-  background-image: url("/images/hintergrund.jpeg");
+  background-image: url("/images/background.jpeg");
   background-size: cover;
   margin: 0px;
   border: 1px solid black; /* see the border*/
   height: 700px;
 }
 
-h1 {
-  text-align: links;
-  color: aliceblue;
-  text-transform: uppercase;
-  font-size: 2em;
-  letter-spacing: 2px;
-  margin-left: 100px;
-  top: 0px;
-  z-index: 10;
-}
 
-#h1-1 {
-  color: white;
+
+h1 {
+  color: var(--color-4);
   text-transform: uppercase;
   font-size: 3em;
   font-weight: bold;
@@ -52,7 +48,7 @@ h1 {
 
 #h1-2 {
   text-align: center;
-  color: white;
+  color: var(--color-4);
   line-height: 30px;
   font-size: 1em;
   margin: 20px auto;
@@ -60,7 +56,7 @@ h1 {
 
 #h1-3 {
   text-align: center;
-  color: white;
+  color: var(--color-4);
   text-transform: uppercase;
   font-size: 1em;
   margin: 20px auto;
@@ -79,16 +75,28 @@ h1 {
 
 #guide > a {
   padding: 10px 30px;
-  color: rgb(72, 58, 58);
+  color: var(--color-4);
   font-weight: bold;
 }
+
+
+.sections__dark {
+  back-color:var(--color-0);
+}
+
+
+.sections__dark {
+  back-color:var(--color-4);
+}
+
+
 
 #aboutme {
   margin: 50px;
   display: flex;
 }
 
-.sections {
+.skill-card {
   position: relative;
   display: flex;
   width: 50%;
